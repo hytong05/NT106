@@ -22,7 +22,7 @@ namespace API_Exercise
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            string apiKey = "5279288478711e567577eae123450f58";
+            string apiKey = "..."; // Add KPI key
             string city = textBox1.Text.Trim();
             string countryCode = textBox2.Text.Trim();
 
@@ -32,7 +32,7 @@ namespace API_Exercise
                 return;
             }
 
-            string apiUrl = $"http://api.openweathermap.org/data/2.5/weather?q={city},{countryCode}&appid={apiKey}&units=metric";
+            string apiUrl = $"..."; // Add API URL
 
             using (HttpClient client = new HttpClient())
             {
